@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`combine() renders the correct tree 1`] = `"<div><div data-testid=\\"c1\\"><article data-testid=\\"c2\\"><span data-testid=\\"c3\\">innermost!</span></article></div></div>"`;
+
+exports[`combine() renders the correct tree with functional components 1`] = `"<div><div data-testid=\\"c1\\"><div data-testid=\\"c2\\"><div data-testid=\\"c3\\">innermost!</div></div></div></div>"`;

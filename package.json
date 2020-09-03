@@ -1,13 +1,14 @@
 {
   "name": "re-tk",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
     "prepublish": "yarn build && yarn test && yarn readme",
-    "readme": "node scripts/createReadme.mjs"
+    "readme": "node scripts/createReadme.mjs",
+    "examples": "webpack --version && node scripts/runExamples.mjs"
   },
   "devDependencies": {
     "@nuuji/config": "^0.3.3",
@@ -15,7 +16,8 @@
     "@testing-library/react": "^10.4.8",
     "@testing-library/react-hooks": "^3.4.1",
     "glob": "^7.1.6",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "webpack": "^4.44.1"
   },
   "dependencies": {
     "react": "^16.13.1",
